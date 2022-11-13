@@ -1,0 +1,61 @@
+/**
+ *  Welcome to the the theme toggle experience! Feel free to reuse this code as you wish.
+ *  This site was made during my education at Medieinstitutet in Stockholm, Sweden. This
+ * 
+ *  Feel free to connect with me on Linkedin: https://www.linkedin.com/in/joeldelpilar/
+ */
+
+@forward "base";
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+main {
+	width: 100vw;
+	height: 100vh;
+	background-color: hsl(196, 65%, 97%);
+
+	main,
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	h1 {
+		margin-block-end: 5rem;
+		padding-block-start: 12rem;
+		font-weight: 300;
+		letter-spacing: 0.35rem;
+	}
+
+	button {
+		border: 2px solid hsl(221, 13%, 25%);
+		padding-inline: 5rem;
+		padding-block: 2rem;
+		border-radius: 5rem;
+		box-shadow: 1px 2px 2px hsl(197, 3%, 57%);
+		font-weight: 700;
+	}
+
+	button:hover {
+		background-color: hsl(242, 16%, 45%);
+	}
+}
+
+main.dark {
+	background-color: hsl(221, 13%, 25%);
+
+	main,
+	section,
+	h1 {
+		color: hsl(196, 65%, 97%);
+	}
+
+	button {
+		border: 2px solid hsl(197, 3%, 57%);
+		box-shadow: 1px 2px 2px hsla(244, 8%, 59%, 0.521);
+		color: hsl(221, 13%, 25%);
+	}
+}
