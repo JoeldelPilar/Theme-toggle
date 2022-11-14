@@ -16,7 +16,6 @@ main {
 	height: 100vh;
 	background-color: hsl(196, 65%, 97%);
 
-	main,
 	section {
 		display: flex;
 		flex-direction: column;
@@ -28,6 +27,9 @@ main {
 		padding-block-start: 12rem;
 		font-weight: 300;
 		letter-spacing: 0.35rem;
+		width: 80vw;
+		margin-inline: auto;
+		text-align: center;
 	}
 
 	button {
